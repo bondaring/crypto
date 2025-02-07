@@ -1,0 +1,112 @@
+/* Estilo General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #0ff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Loader */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #0ff;
+    font-size: 2rem;
+    font-family: monospace;
+    z-index: 100;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Fondo Animado */
+.crypto-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Contenedor */
+.container {
+    max-width: 450px;
+    background: rgba(0, 255, 255, 0.1);
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+/* Mejor Espaciado de Inputs */
+.input-area {
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    background: rgba(0, 255, 255, 0.2);
+    color: #0ff;
+    outline: none;
+    transition: transform 0.2s ease-in-out;
+}
+#amount {
+    width: 96%;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+/* Resultados */
+.resultados {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ocultar contenido hasta que cargue */
+.hidden {
+    display: none;
+}

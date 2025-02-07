@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor Cripto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loader con efecto de máquina de escribir -->
+    <div id="loader">
+        <span id="loader-text"></span><span class="cursor">|</span>
+    </div>
+
+    <!-- Fondo animado -->
+    <div class="crypto-bg"></div>
+
+    <div class="container hidden">
+        <h1>🚀 Crypto converter 🚀</h1>
+
+        <div class="input-area">
+            <div class="input-group">
+                <label for="currency">Convertir desde:</label>
+                <select id="currency">
+                    <option value="PEN">Soles Peruanos (PEN)</option>
+                    <option value="USD">Dólares (USD)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="amount">Cantidad:</label>
+                <input type="number" id="amount" placeholder="Ingrese cantidad">
+            </div>
+        </div>
+
+        <div class="resultados">
+            <h2>Resultados</h2>
+            <p><strong>BTC:</strong> <span id="btc">0.00</span></p>
+            <p><strong>ETH:</strong> <span id="eth">0.00</span></p>
+            <p><strong>XRP:</strong> <span id="xrp">0.00</span></p>
+            <p><strong>USDT:</strong> <span id="usdt">0.00</span></p>
+            <p><strong>SOL:</strong> <span id="sol">0.00</span></p>
+            <p><strong>DOGE:</strong> <span id="doge">0.00</span></p>
+            <p><strong>TRUMP:</strong> <span id="trump">0.00</span></p>
+            <p><strong>TON:</strong> <span id="ton">0.00</span></p>
+        </div>
+
+        <p class="update-time">Última actualización: <span id="last-update">Cargando...</span></p>
+        <p>Created by Sergei Bondar</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
