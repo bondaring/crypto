@@ -61,14 +61,14 @@ body {
 
 /* Mejor Espaciado de Inputs */
 .input-area {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 
 .input-group {
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 input, select {
